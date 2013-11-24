@@ -92,6 +92,8 @@
   
 <!-- tab content -->
 <div class="tab-content">
+
+  <!--INBOX-->
   <div class="tab-pane active" id="inbox">
     <h4> Messages</h4>
     <a class="btn btn-primary btn-lg" role="button">Delete</a>
@@ -101,57 +103,213 @@
     <div class = "rightbuttons">
         <a class="btn btn-primary btn-lg" role="button">Newer</a>
     </div><br>
-    <div class = "selection"><p>Select <a href="/">All</a> <a href="/">Read</a>  <a href="/">Unread</a>  <a href="/">None</a> </p></div>
-       <label class="checkbox" for="checkbox9"><input type="checkbox" value="" id="checkbox9" data-toggle="checkbox"> one</label> 
+    <div class = "selection"><p>Select <a href="">All</a> <a href="">Read</a>  <a href="">Unread</a>  <a href="">None</a> </p></div>
 
+
+    <table class="table ">
+    <tr>
+        <td><label class="checkbox" for="checkbox9"><input type="checkbox" value="" id="checkbox9" data-toggle="checkbox"> </label>
+        </td>
+        <td>Name<br>Date</td>
+        <td><img src="http://placehold.it/50x50"></td>
+        <td><a href="">Dress Listing</a><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
+    </tr>
+     <tr>
+        <td><label class="checkbox" for="checkbox9"><input type="checkbox" value="" id="checkbox9" data-toggle="checkbox"> </label> 
+        </td>
+        <td>Name<br>Date<br></td>
+        <td><img src="http://placehold.it/50x50"></td>
+        <td><a href="">Dress Listing</a><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
+    </tr>
+    </table>
 
   </div>
+
+    <!--YOUR FAVES-->
   <div class="tab-pane" id="fav">
     <h4>Favorites</h4>
-    <div class="row">
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
+ 
+ <div class="container">     
+<div class="row">
+<div id="image-grid" class="col-sm-12 col-md-10">
+<div class="row">
+<div class="col-sm-4 col-md-4"> 
+<a class="thumbnail text-center" href="/images/1"> 
+    <img src="http://media-cache-ak0.pinimg.com/736x/6e/56/b9/6e56b96c522c724a022210a3e73cc590.jpg">
+Designer<br>
+Size<br>
+Price
+</a>            
 </div>
+<div class="col-sm-4 col-md-4"> 
+<a class="thumbnail text-center" href="/images/3"> 
+    <img src="http://media-cache-ak0.pinimg.com/736x/6e/56/b9/6e56b96c522c724a022210a3e73cc590.jpg" width="300px" height="300px">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+<div class="col-sm-4 col-md-4"> 
+<a class="thumbnail text-center" href="/images/2"> 
+    <img src="http://media-cache-ak0.pinimg.com/736x/6e/56/b9/6e56b96c522c724a022210a3e73cc590.jpg" width="300px" height="300px">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+<div class="col-sm-4 col-md-4"> 
+<a class="thumbnail text-center" href="/images/2"> 
+    <img src="http://media-cache-ak0.pinimg.com/736x/6e/56/b9/6e56b96c522c724a022210a3e73cc590.jpg" width="300px" height="300px">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+<div class="col-sm-4 col-md-4"> 
+<a class="thumbnail text-center" href="/images/2"> 
+    <img src="http://media-cache-ak0.pinimg.com/736x/6e/56/b9/6e56b96c522c724a022210a3e73cc590.jpg" width="300px" height="300px">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+<div class="col-sm-4 col-md-4"> 
+<a class="thumbnail text-center" href="/images/2"> 
+    <img src="http://media-cache-ak0.pinimg.com/736x/6e/56/b9/6e56b96c522c724a022210a3e73cc590.jpg" width="300px" height="300px">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
   </div>
+  <!--DRESSES FOR SALE-->
   <div class="tab-pane" id="your-dress">
      <h4>Dresses For Sale</h4>
+  <div id= "selection-listing"><select class="form-control">
+    <option>Show All Listings</option>
+    <option>Listing 1</option>
+    <option>Listing 2</option>
+    <option>Listing 3</option>
+    <option>Listing 4</option>
+  </select>
+  <br>
   </div>
+
+    <div class = "rightbuttons">
+
+  <a class="btn btn-primary btn-lg" role="button">Managing Listing</a>
+  <a class="btn btn-primary btn-lg" role="button">View Listing</a></div>
+
+<div class="container">     
+<div class="row">
+<div id="image-grid" class="col-sm-12 col-md-10">
+<div class="row">
+<div class="col-sm-4 col-md-5"> 
+<a class="thumbnail text-center" href="/images/1"> 
+    <img src="http://weddingler.com/wp-content/uploads/2013/10/wedding-dresses-2013-straplesskaylees-bridal---organza-strapless-mermaid-style-with-twisted-lxbtlgt5.jpg">
+Designer<br>
+Size<br>
+Price
+</a>            
+</div>
+<div class="col-sm-4 col-md-5"> 
+<a class="thumbnail text-center" href="/images/3"> 
+    <img src="http://www.merledress.com/blog/wp-content/uploads/2012/09/Detailed-Back-Wedding-Dresses.jpg">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+<div class="col-sm-4 col-md-5"> 
+<a class="thumbnail text-center" href="/images/2"> 
+    <img src="http://www.mylilventure.com/wp-content/uploads/2010/05/wedding-insurance1.jpg">
+Designer<br>
+Size<br>
+Price
+</a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+<!--ALERTS TAB-->
   <div class="tab-pane" id="alerts">
     <h4>Dress Alerts</h4>
     <p> Want to instantly know when a new dress gets listed on Hint of White? Create a dress alert and you'll receive an email as soon as a dress that you're looking for gets listed.</p>
 
    <h5>Saved Alerts</h5>
-   <h6> Add New Dress Alerts</h6>
+   <table class="table table-bordered">
+    <tr>
+        <th>  Designer </th>
+        <th> Size</th>
+    </tr>
+    <tr>
+        <td>Vera Wang</td>
+        <td>3</td>
+    </tr>
+    </table>
+
+   <h5> Add New Dress Alerts</h5>
+   Receive an email instantly when a dress you're looking for gets listed on HINT of WHITE.
+   <br><br>
+   <form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="submission" class="col-sm-1 control-label">Designer</label>
+    <div class="col-xs-4">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
   </div>
+    <label for="slider" class="col-sm-1 control-label">Size</label>
+   <div class="col-md-4 slider-wrapper">
+        <div id = "override-slider"><div id="size-slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"></div></div>
+  </div>
+</form>
+<br><br>
+   <div class = "accountsubmit-button"><a class="btn btn-primary btn-lg" role="button">Save</a></div>
+     
+  </div>
+
+<!--ACCOUNT TAB-->
   <div class="tab-pane" id="account">
     <h4>Account</h4>
 
+
+
     <form class="form-horizontal" role="form">
   <div class="form-group">
+
     <div class="col-xs-4">
         <label for="name">First Name</label>
-        <input type="text" class="form-control" class="inputname" placeholder="Enter First Name">
+        <input type="text" class="form-control" class="inputname" placeholder="Mary">
     </div>
      <div class="col-xs-4">
         <label for="name">Last Name</label>
-        <input type="text" class="form-control" class="inputname" placeholder="Enter Last Name">
+        <input type="text" class="form-control" class="inputname" placeholder="Sue">
     </div>
+
 
       <div class="col-xs-10">
         <label for="name">Email</label>
-        <input type="text" class="form-control" class="email" placeholder="Enter Your Email">
+        <input type="text" class="form-control" class="email" placeholder="marysuewedding@email.com">
     </div>
   </div>
+</form>
 
 
 <h4> Email Preferences</h4>
@@ -165,23 +323,27 @@
     <label class="checkbox" for="checkbox9"><input type="checkbox" value="" id="checkbox9" data-toggle="checkbox"> Unsubscribe me from all Hint of White emails</label> 
 
 <h4> Change Password</h4>
-
-<div class="col-xs-4">
-
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+   <div class="col-xs-4">
         <label for="name">Old Password</label>
-        <input type="password" class="form-control" class="oldpass" placeholder="Enter Your Password">
-</div>
-
-<div class="col-xs-4">
+        <input type="password" class="form-control" class="inputname" placeholder="Enter Your Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-4">
         <label for="name">New Password</label>
-        <input type="password" class="form-control" class="newpass" placeholder="Enter Your New Password">
-</div>
+        <input type="text" class="form-control" class="inputname" placeholder="Enter Your New Password">
+    </div>
+    <div class="col-xs-4">
+        <label for="name">Verify New Password</label>
+        <input type="text" class="form-control" class="inputname" placeholder="Enter Your New Password Again">
+    </div>
 
-<div class="col-xs-4">
-        <label for="name">New Password</label>
-        <input type="password" class="form-control" class="newpass" placeholder="Verify Your New Password">
-</div> 
- <div id = "accountsubmit-button"><a class="btn btn-primary btn-lg" role="button">Save</a></div>
+  </div>
+</form>
+
+<a class="btn btn-primary btn-lg" role="button">Save</a>
 
 
 </div>

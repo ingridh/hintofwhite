@@ -501,11 +501,27 @@ text-shadow: rgba(0, 0, 0, 0.25) 0 0 50px;
 
 .col-xs-10 {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-#accountsubmit-button {
-  
+.table.table-bordered {
+    width: 50%;
+    margin: 20px 0 40px 0;
+}
+
+#override-slider {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#selection-listing {
+  width: 30%;
+}
+
+.accountsubmit-button {
+  margin-left: 20%;
+}
+
 }
 
 /* ==========================================================================
