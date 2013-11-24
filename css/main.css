@@ -1,0 +1,699 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  background: #f1f1f1;
+}
+
+
+/* Header */
+
+#header-wrapper {
+  width: 100%;
+  min-width: 1060px;
+  border-top:5px solid #252A30;
+  border-bottom:5px solid #e5e5e5;
+  background: #fff;
+}
+
+
+header {
+  width: 1060px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+#header-logo {
+  float: left;
+  width: 50%;
+}
+
+#header-logo img {
+  position: relative;
+  top: 37px;
+  left: 0px;
+
+}
+
+#top-nav{
+  min-width:200px;
+  width:auto;
+  height:30px;
+  border-radius:0 0 5px 5px;
+  float:right;
+  background: #252A30;
+  font-size: 14px;
+  padding:3px 0 0 0;
+  text-transform: uppercase;
+}
+
+#top-nav ul,#top-nav li{
+  padding:0;
+  margin:0;
+}
+
+#top-nav #signup,
+#top-nav #login
+{
+  background: #252A30;
+  width:300px;
+  min-height:200px;
+  border-radius:5px 0 5px 5px;
+  position:absolute;
+  top:30px;
+  margin:0 0 0 -100px;
+  padding:0 20px 10px 20px;
+  z-index:5;
+  display:none;
+  color:#fff;
+}
+
+#top-nav #signup > hr,
+#top-nav #login > hr{
+  width:100%;
+  height:1px;
+  background:#57626d;
+  border:none;
+}
+
+#top-nav #signup form,
+#top-nav #login form{
+  margin:15px 0 0 0;
+}
+
+#top-nav #signup form label,
+#top-nav #login form label{
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#top-nav #signup input[type=text],
+#top-nav #login input[type=text],
+#top-nav #signup input[type=password],
+#top-nav #login input[type=password]{
+background: rgba(255,255,255,0.1);
+border-color: transparent;
+font-size: 14px;
+height: auto;
+margin: 5px 0;
+outline: 0;
+padding: 6px;
+width: 100%;
+color:#fff;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+}
+
+#top-nav #signup input[type=submit],
+#top-nav #login input[type=submit]{
+  width:125px;
+  height:40px;
+  color:#fff;
+ font-size: 14px;
+  text-align: center;
+  background:#f17c71;
+  border:none;
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 0px rgba(185,92,83,1);
+    -moz-box-shadow: 0px 4px 0px rgba(185,92,83,1);
+    box-shadow: 0px 4px 0px rgba(185,92,83,1);
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+  float:right;
+  margin:10px 0;
+
+}
+
+#top-nav #signup input[type=submit]:active,
+#top-nav #login input[type=submit]:active{
+      -webkit-box-shadow: 0px 2px 0px rgba(185,92,83,1);
+    -moz-box-shadow: 0px 2px 0px rgba(185,92,83,1);
+    box-shadow: 0px 2px 0px rgba(185,92,83,1);
+    position: relative;
+    top: 3px;
+
+  }
+
+#top-nav #signup .or,
+#top-nav #login .or{
+  z-index: 10;
+  width: 45px;
+  height: 20px;
+  background: #252A30;
+  position: absolute;
+  top: 91px;
+  left: 125px;
+  text-align: center;
+  color:#57626d;
+}
+
+#top-nav #fb-connect,
+#top-nav #fb-login{
+  width:260px;
+  height:50px;
+  margin:20px auto 30px auto;
+  background:#0D74BB url(../img/fb-connect-bg.png) center 0px;
+  border:none;
+  display: block;
+  color:#fff;
+ font-size: 20px;
+  text-align: left;
+  padding: 2px 0 0 55px;
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 0px rgba(11,85,136,1), 0px 3px 10px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 4px 0px rgba(11,85,136,1), 0px 3px 10px rgba(0,0,0,.7);
+    box-shadow: 0px 4px 0px rgba(11,85,136,1), 0px 3px 10px rgba(0,0,0,.7);
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+
+}
+
+#top-nav #fb-connect:active,
+#top-nav #fb-login:active{
+    -webkit-box-shadow: 0px 2px 0px rgba(11,85,136,1), 0px 1px 3px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 2px 0px rgba(11,85,136,1), 0px 1px 3px rgba(0,0,0,.9);
+    box-shadow: 0px 2px 0px rgba(11,85,136,1), 0px 1px 3px rgba(0,0,0,.9);
+    position: relative;
+    top: 3px;
+  }
+
+
+
+#top-nav li {
+  display: inline;
+  padding-left: 10px;
+  color:#fff;
+  
+} 
+
+#top-nav li a {
+  color: #f17c71;
+  text-decoration: none;
+  font-style:normal;
+}
+
+
+nav {
+  float: right;
+  width: 50%;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-size: 14px;
+  color: #292f3b;
+  text-decoration: none;
+
+  -o-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+nav a:hover {
+  color: #f17c71;
+  text-decoration:none;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  -moz-transition: 0s;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+#menu-header {
+  position: relative;
+  top: 23px;
+  left: -2px;
+  padding-left: 0;
+}
+
+#menu-header li {
+  display: inline;
+  padding-left: 25px;
+} 
+
+#menu-header li.current-menu-item a {
+  color: #f17c71;
+}
+
+#main-wrapper{
+  width:100%;
+  max-width: 1060px;
+  border-radius:5px;
+  margin:20px auto;
+  min-height:600px;
+  background: #fff;
+  padding:20px;
+
+}
+
+
+
+
+
+/* Homepage */
+
+#homepage-intro {
+  width: 100%;
+  min-width: 1060px;
+  height: 700px;
+  text-align: center;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+#homepage-intro-title {
+ width: 1000px;
+font-size: 40px;
+line-height: 52px;
+color: #FFF;
+margin: 0 auto;
+padding-top: 234px;
+text-shadow: rgba(0, 0, 0, 0.25) 0 0 50px;
+}
+
+#homepage-intro-title p {
+  padding: 0;
+  margin: 0;
+}
+
+
+#homepage-intro-more a {
+    position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: #f17c71;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    padding: 8px 12px ;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 100px auto;
+    width: 290px;
+    text-align: center;
+    
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+#homepage-intro-more a:hover {
+
+    position: relative;
+    top: 3px;
+}
+
+#homepage-branding {
+  width: 1060px;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 92px;
+  border-bottom: 1px solid #000;
+}
+
+#homepage-branding-title {
+  float: left;
+  width: 269px;
+  font-size: 30px;
+  line-height: 37px;
+  padding-top: 72px;
+}
+
+#homepage-branding-text {
+  float: left;
+  width: 790px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 57px;
+}
+
+#homepage-branding-text p {
+  margin-bottom: 24px;
+}
+
+#homepage-projects {
+  width: 1060px;
+  overflow: auto;
+  margin: 0 auto;
+  margin-bottom: 95px;
+}
+
+#homepage-projects-title {
+  font-size: 30px;
+  line-height: 37px;
+  padding-top: 34px;
+}
+
+
+
+/* Dresses */
+
+#sidebar-search{
+  width: 100%;
+  background: #f1f1f1;
+  min-height: 500px;
+  border-radius: 5px;
+  border:solid thin #e6e6e6;
+  padding: 10px;  
+
+}
+
+#sidebar-search .slider-wrapper{
+  padding-top:12px;
+ }
+
+
+#sidebar-search .ui-slider{
+  width:150px;
+}
+
+#sidebar-search label{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*Account Page*/
+.rightbuttons {
+  float: right;
+  margin-right: 7px;
+}
+
+.selection {
+  word-spacing: 5px;
+  padding-top: 20px;
+}
+
+.col-xs-10 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#accountsubmit-button {
+  
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

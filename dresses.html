@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/flat-ui.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- fonts -->
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="header-wrapper">
+      <header>
+        <div id="header-logo">
+          <a href="/"><img src="img/header-logo.png" alt="Hint of White"></a>
+        </div>
+        <div id="top-nav">
+            <ul>
+                <li class="signup"><a href="">Signup Free</a></li>
+                <li>Or</li>
+                <li class="login"><a href="">Login</a></li>
+            </ul>
+        <div id="signup">
+            <button id="fb-connect">Connect to</button>
+            <hr/><span class="or">OR</span>
+            <form name="frmSignup" method="post">
+                <label>Create your Account</label>
+                <input type="text" name="name" value="" placeholder="Name" />
+                <input type="text" name="email" value="" placeholder="Email" />
+                <input type="password" name="password" value="" placeholder="Password" />
+                <input type="password" name="confirmPassword" value="" placeholder="Confirm Password" />
+                <input type="submit" name="signup" value="Signup" />
+            </form>
+        </div>
+        <div id="login">
+           <button id="fb-login">Login with</button>
+            <hr/><span class="or">OR</span>
+            <form name="frmLogin" method="post">
+                <label>Login to your account</label>
+                <input type="text" name="username" value="" placeholder="Username" />
+                <input type="password" name="password" value="" placeholder="Password" />
+                <input type="submit" name="login" value="Login" />
+            </form>
+        </div>
+        </div>
+        <nav role="navigation">
+          <div class="menu-header-container">
+            <ul id="menu-header" class="menu">
+               <li><a href="dresses.html">Dresses</a></li>
+                <li><a href="how-it-works.html">How it works</a></li>
+                <li><a href="list-your-dress.html">List your dress</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>    
+       </nav>
+      </header>
+    </div>
+
+    <section id="main-wrapper">
+        <div class="row">
+            <div class="col-md-3">
+                <aside id="sidebar-search">
+                    <div class="form-group">
+                        <input type="text" value="" placeholder="Search" class="form-control">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Size:</label>
+                            </div>
+                            <div class="col-md-9 slider-wrapper">
+                                <div id="size-slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"></div>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Condition:</label>
+                            </div>
+                              <div class="col-md-9 slider-wrapper"> 
+                              <label class="checkbox" for="checkbox1"><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox"> New with tags</label> 
+                               <label class="checkbox" for="checkbox2"><input type="checkbox" value="" id="checkbox2" data-toggle="checkbox"> New (altered)</label> 
+                                <label class="checkbox" for="checkbox3"><input type="checkbox" value="" id="checkbox3" data-toggle="checkbox"> Sample</label> 
+                                 <label class="checkbox" for="checkbox4"><input type="checkbox" value="" id="checkbox4" data-toggle="checkbox"> Preowned</label> 
+
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Shape:</label>
+                            </div>
+                              <div class="col-md-9 slider-wrapper">
+                               <label class="checkbox" for="checkbox5"><input type="checkbox" value="" id="checkbox5" data-toggle="checkbox"> A Line</label> 
+                               <label class="checkbox" for="checkbox6"><input type="checkbox" value="" id="checkbox6" data-toggle="checkbox"> Mermaid</label> 
+                                <label class="checkbox" for="checkbox7"><input type="checkbox" value="" id="checkbox7" data-toggle="checkbox"> Fit and Flair</label> 
+                                 <label class="checkbox" for="checkbox8"><input type="checkbox" value="" id="checkbox8" data-toggle="checkbox"> Ball Gown</label>   
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Neckline:</label>
+                            </div>
+                              <div class="col-md-9 slider-wrapper">
+                               <label class="checkbox" for="checkbox9"><input type="checkbox" value="" id="checkbox9" data-toggle="checkbox"> Strapless</label> 
+                               <label class="checkbox" for="checkbox10"><input type="checkbox" value="" id="checkbox10" data-toggle="checkbox"> Halter</label> 
+                                <label class="checkbox" for="checkbox11"><input type="checkbox" value="" id="checkbox11" data-toggle="checkbox"> Off Shoulder</label> 
+                                 <label class="checkbox" for="checkbox12"><input type="checkbox" value="" id="checkbox12" data-toggle="checkbox"> Long Sleeves</label>   
+                           </div>
+                        </div>
+                        <input type="submit" class="btn btn-primary" vlaue="Search">
+                     </div>
+                </aside>
+            </div>
+            <div class="col-md-9">.col-md-4</div>
+        </div>
+
+    </section>
+            
+        <!-- js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins/bootstrap-select.js"></script>
+        <script src="js/plugins/bootstrap-switch.js"></script>
+        <script src="js/plugins/flatui-checkbox.js"></script>
+        <script src="js/plugins/flatui-radio.js"></script>
+        <script src="js/plugins/jquery.placeholder.js"></script>
+        <script src="js/plugins/jquery.stacktable.js"></script>
+        <script src="js/plugins/jquery.tagsinput.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
